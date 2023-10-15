@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SquareActivity">
+
+    <EditText
+        android:id="@+id/edTextA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint='Введите сторону "a"'
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btCalcSquare"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Рассчитать"
+        app:layout_constraintEnd_toEndOf="@+id/edTextA"
+        app:layout_constraintStart_toStartOf="@+id/edTextA"
+        app:layout_constraintTop_toBottomOf="@+id/edTextA" />
+
+    <TextView
+        android:id="@+id/tResultSquare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/btCalcSquare"
+        app:layout_constraintStart_toStartOf="@+id/btCalcSquare"
+        app:layout_constraintTop_toBottomOf="@+id/btCalcSquare" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/square" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="S = a × a = a2"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
